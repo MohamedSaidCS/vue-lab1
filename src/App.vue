@@ -35,6 +35,8 @@ export default {
         this.admins.push(data.user);
       else
         this.students.push(data.user);
+
+      data.user = {};
     },
     deleteUser(data) {
       if (data.type === 'admin')
